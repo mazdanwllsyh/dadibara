@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KARTAR DADIBARA - Hubungi Kami</title>
+    <link
+      rel="shortcut icon"
+      href="https://github.com/mazdanwllsyh/dadibara/blob/main/assets/Logo.png?raw=true"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="https://github.com/mazdanwllsyh/dadibara/blob/main/assets/Logo.png?raw=true"
+            alt="Logo"
+            style="max-width: 75px"
+          />
+        </a>
+
+        <!-- Navbar Toggler (Hamburger) -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Items -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <!-- Menggunakan ms-auto untuk memindahkan ke kanan -->
+            <!-- Section 1 -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <!-- Section 2 -->
+            <li class="nav-item">
+              <a class="nav-link" href="tentang.html">Tentang Kami</a>
+            </li>
+            <!-- Section 3 (Dropdown) -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Keanggotaan
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="pengurus.html">Pengurus</a></li>
+                <li><a class="dropdown-item" href="#">Anggota</a></li>
+              </ul>
+            </li>
+            <!-- Section 4 -->
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQ</a>
+            </li>
+            <!-- Section 5 -->
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Kontak Kami</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="contact-us" class="py-5 d-flex align-items-center">
+      <div class="container mb-5">
+        <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+          <div class="col">
+            <h1>Contact Us</h1>
+            <form>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nama"
+                  placeholder="Nama Anda"
+                  style="font-family: Inter Tight, sans-serif;"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Masukkan Email Anda"
+                  style="font-family: JetBrains Mono, monospace;"
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  id="inputMessage"
+                  rows="8"
+                  placeholder="Kritik dan Saran"
+                ></textarea>
+              </div>
+              <a href="mailto:"><button
+                type="submit"
+                class="btn btn-primary w-100"
+                style="background-color: darkcyan; font-family: Andika, sans-serif; border: 0"
+              >
+                Kirim
+              </button></a>
+            </form>
+          </div>
+          <div class="col">
+            <h1>Location</h1>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7915.336131274296!2d110.41069691435968!3d-7.2785579207930695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70818da0126cd3%3A0x4591110a1921a489!2sBejalen%2C%20Kec.%20Ambarawa%2C%20Kabupaten%20Semarang%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1714847012863!5m2!1sid!2sid"
+              width="100%"  
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+  <footer id="footer-bg-img" class="bg-dark text-light py-4">
+    <div class="container">
+      <div class="row justify-content-center align-items-center mb-3">
+        <div class="col-auto">
+          <a href="https://www.instagram.com/kartar.dadibara/" target="_blank" class="text-decoration-none text-light">
+            <i class="fab fa-instagram fa-2x"></i></a>
+        </div>
+        <div class="col-auto">
+          <a
+            href="https://wa.me/6283108788527" target="_blank" class="text-decoration-none text-light">
+            <i class="fab fa-whatsapp fa-2x"></i
+          ></a>
+        </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p class="mb-0">"Tagline"</p>
+          <p class="mb-0">
+            <a href="https://maps.app.goo.gl/AQ2GP9iUVEaS7Eyj6" target="_blank" >
+              <i class="fas fa-location-dot" style="font-size: 14px"></i>
+              Desa Bejalen, Kec. Ambarawa, Kab. Semarang 50614</a
+            >
+          </p>
+          <p class="mb-0">&copy; 2024 DADI BARA</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </footer>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

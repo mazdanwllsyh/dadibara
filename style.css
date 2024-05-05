@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Averia+Sans+Libre&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Averia+Sans+Libre&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Custom CSS for Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px; /* Mengubah ukuran font */
+  font-family: "Averia Sans Libre", sans-serif; /* Mengubah jenis font */
+  transition: all 0.45s; /* Efek transisi untuk hover */
+  width: 145px;
+  border-radius: 9px;
+  text-align: center;
+  padding: 8px 12px;
+  margin: 10px 2vh;
+  background-color: azure;
+}
+
+.navbar-nav .nav-link:hover {
+  color: white;
+  background-color: darkcyan;
+  font-family: "JetBrains Mono", sans-serif;
+  transform: scale(1.05);
+  font-weight: bolder;
+  transition: 250ms ease;
+}
+
+.navbar-nav .nav-link:focus {
+  transform: scale(0.95);
+}
+
+/* HERO */
+.hero-bg-img {
+  background-image: url();
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+#hero h1 {
+  letter-spacing: 2px;
+}
+
+#content {
+  color: #2a2a2a;
+}
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+.explore-btn {
+  font-family: "Inter Tight", sans-serif;
+  margin-top: 20px;
+  width: 150px;
+  padding: 10px;
+  background-color: darkcyan;
+  color: aquamarine;
+}
+
+.explore-btn:hover {
+  width: 200px;
+  font-weight: bolder;
+  transition: all 0.35s;
+  color: azure;
+  background-color: rgb(1, 110, 110);
+}
+
+.explore-btn:focus {
+  transform: scale(0.95);
+}
+
+/* ABOUT US */
+.about__setion-thumbnail {
+  height: 240px;
+  object-fit: cover;
+}
+
+.about__content-width {
+  max-width: 456px;
+  margin: 0 auto;
+}
+
+.about-us-bg-img {
+  background-image: url();
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.aboutus {
+  color: #323232;
+}
+
+#text-about-us h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+#text-about-us p {
+  text-align: justify;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  padding: 18px 9px;
+  background-color: #414141;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 400px;
+}
+
+/* PENGURUS */
+#collab-bg-img {
+  background-image: url();
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+}
+
+#collab-bg-img h2 {
+  color: #323232;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#collab-bg-img p {
+  color: #bc9e9e;
+}
+
+.intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.intro p {
+  margin-bottom: 0;
+}
+
+.people {
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.item {
+  margin-bottom: 30px;
+}
+
+.item .box {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.item .box-1 {
+  min-height: 400px;
+}
+.item .box-2 {
+  min-height: 300px;
+}
+
+.item .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(65, 65, 65, 0.705);
+  transition: 250ms opacity 0.15s ease-in;
+  opacity: 0;
+  padding-top: 80px;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  font-family: "Inter Tight", sans-serif;
+}
+
+.item:hover .cover {
+  opacity: 1;
+}
+
+.item .name {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.item .title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #bbd8fb;
+  letter-spacing: 2px;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.social {
+  font-size: 22px;
+}
+
+.social a {
+  color: inherit;
+  margin: 0 10px;
+  display: inline-block;
+  opacity: 0.7;
+}
+
+.social a:hover {
+  opacity: 1;
+  transform: scale(1.15);
+  transition: 0.4s ease;
+}
+
+@media (max-width: 762px) {
+  .item .box {
+    height: 400px !important;
+  }
+}
+
+/* FAQ */
+
+#faq {
+  background-image: url();
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+}
+
+#faq h1 {
+  color: #323232;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+#faq button {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Mengubah warna latar belakang dan teks dari accordion pertama */
+#collapseOne {
+  background-color: lightblue;
+  color: navy;
+}
+
+/* Mengubah warna latar belakang dan teks dari accordion kedua */
+#collapseTwo {
+  background-color: lightgreen;
+  color: darkgreen;
+}
+
+/* Mengubah warna latar belakang dan teks dari accordion ketiga */
+#collapseThree {
+  background-color: lightcoral;
+  color: maroon;
+}
+
+/* Mengubah warna latar belakang dan teks dari accordion keempat */
+#collapseFour {
+  background-color: lightyellow;
+  color: goldenrod;
+}
+
+/* CONTACT US */
+#contact-us {
+  background-image: url();
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+}
+#contact-us h1 {
+  letter-spacing: 1px;
+  color: #323232;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+iframe {
+  border-radius: 12px;
+}
+
+/* Footer ngehe */
+
+#footer-bg-img {
+  background-image: url();
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+}
+
+footer {
+  position: relative;
+  width: auto;
+  background-color: #414141;
+  font-family: "Inter Tight", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #fff5f4;
+  bottom: 0;
+}
+
+.social-icons a {
+  margin-right: 2px;
+  text-decoration: none;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+footer i {
+  color: white;
+  font-size: 3vh;
+  padding: 10px;
+  cursor: pointer;
+}
+
+footer a {
+  color: #fff5f4;
+  text-decoration: none;
+}
+
+footer i:hover {
+  color: darkcyan;
+  transform: scale(1.05);
+  transition: 100ms;
+}
