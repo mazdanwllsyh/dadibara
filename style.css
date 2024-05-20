@@ -10,29 +10,45 @@ body {
   scroll-behavior: smooth;
 }
 
+section {
+  min-height: 100vh;
+}
+
+.section-title {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+}
+
 /* Custom CSS for Navbar */
 .navbar {
   position: sticky;
   top: 0;
   z-index: 999;
+  box-shadow: 6px 2px 4px rgba(0, 0, 0, 0.3);
+  background-color: rgba(199, 199, 199, 0.65);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .navbar-nav .nav-link {
-  font-size: 17px; /* Mengubah ukuran font */
+  font-size: 16px; /* Mengubah ukuran font */
   font-family: "Averia Sans Libre", sans-serif; /* Mengubah jenis font */
   transition: all 0.45s; /* Efek transisi untuk hover */
-  min-width: 135px;
+  min-width: 130px;
   border-radius: 9px;
   text-align: center;
-  padding: 8px 12px;
-  margin: 10px 2vh;
-  background-color: azure;
+  padding: 5px 9px;
+  margin: 8px 2vh;
+  color: #323232;
+  background-color: rgb(202, 202, 202);
 }
 
 .navbar-nav .nav-link:hover {
   color: white;
   background-color: darkcyan;
-  font-family: "JetBrains Mono", sans-serif;
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
   transform: scale(1.05);
   font-weight: bolder;
   transition: 250ms ease;
@@ -40,6 +56,26 @@ body {
 
 .navbar-nav .nav-link:focus {
   transform: scale(0.95);
+}
+
+.dropdown-menu {
+  backdrop-filter: blur (2px);
+  background-color: rgba(170, 125, 125, 0.482);
+  z-index: 999;
+}
+
+.dropdown-item {
+  font-family: "Averia Sans Libre", monospace;
+  min-width: 130px;
+  text-align: center;
+}
+
+.dropdown-item:hover {
+  font-weight: bolder;
+  transition: 250ms ease;
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
+  background-color: darkcyan;
+  color: #fff;
 }
 
 /* HERO */
@@ -86,7 +122,7 @@ body {
   transform: scale(0.95);
 }
 
-/* ABOUT US */
+/* Tentang Kami */
 .about__setion-thumbnail {
   height: 240px;
   object-fit: cover;
@@ -109,28 +145,52 @@ body {
   color: #323232;
 }
 
-#text-about-us h1 {
+.text-about-us h2 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   text-align: center;
   letter-spacing: 1px;
   font-weight: 700;
 }
 
-#text-about-us p {
+.text-about-us {
   text-align: justify;
 }
 
-.carousel-control-next-icon, .carousel-control-prev-icon {
-  padding: 18px 9px;
-  background-color: #5880815d;
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  padding: 18px 12px;
+  background-color: #231e1e96;
 }
 
 .carousel-item {
-  width: 100%;
-  height: 400px;
+  min-width: 100%;
+  height: 450px;
 }
 
 /* PENGURUS */
+.input-group {
+  position: relative;
+}
+
+.input-group .form-control {
+  padding-right: 2.5rem;
+}
+
+.input-group .input-group-text {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.input-group .input-group-text .fas {
+  color: #888;
+}
+
 #collab-bg-img {
   background-image: url();
   background-repeat: no-repeat;
@@ -168,6 +228,7 @@ body {
 }
 
 .item .box {
+  border-radius: 12px;
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -177,9 +238,17 @@ body {
   overflow: hidden;
   margin: 0 auto;
 }
-.item .box-1 {
-  min-height: 400px;
+
+.item .box:hover {
+  transition: 150ms ease;
+  border: 2px solid darkkhaki;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.9);
 }
+
+.item .box-1 {
+  min-height: 450px;
+}
+
 .item .box-2 {
   min-height: 300px;
 }
@@ -232,6 +301,7 @@ body {
   opacity: 1;
   transform: scale(1.15);
   transition: 0.4s ease;
+  color: goldenrod;
 }
 
 @media (max-width: 762px) {
@@ -241,24 +311,28 @@ body {
 }
 
 /* FAQ */
-
 #faq {
   background-image: url();
   background-repeat: no-repeat;
   width: 100%;
-  height: 70vh;
+  min-height: 90vh;
   background-size: cover;
 }
 
-#faq h1 {
+#faq h2 {
   color: #323232;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
   letter-spacing: 1px;
   font-weight: 700;
 }
 
 #faq button {
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.accordion-body p {
+  text-align: justify;
+  font-size: 14px;
 }
 
 /* Mengubah warna latar belakang dan teks dari accordion pertama */
@@ -290,20 +364,44 @@ body {
   background-image: url();
   background-repeat: no-repeat;
   width: 100%;
+  min-height: 100vh;
   background-size: cover;
 }
-#contact-us h1 {
+#contact-us h2 {
   letter-spacing: 1px;
   color: #323232;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5); */
+}
+
+.alert-card {
+  display: none;
+  font-size: 18px;
+  font-family: "JetBrains Mono", sans-serif;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #1e582b;
+  border: 1px solid #c3e6cb;
+  margin-bottom: 10px;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #e7081f;
+  border: 1px solid #f5c6cb;
+  margin-bottom: 15px;
 }
 
 iframe {
-  border-radius: 10px;
+  border-radius: 12px;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.8);
 }
 
 /* Footer ngehe */
-
 #footer-bg-img {
   background-image: url();
   background-repeat: no-repeat;
@@ -312,9 +410,8 @@ iframe {
 }
 
 footer {
-  margin-top: 40px;
   position: relative;
-  width: auto;
+  width: 100%;
   background-color: #414141;
   font-family: "Inter Tight", sans-serif;
   font-weight: bold;
@@ -324,18 +421,17 @@ footer {
 }
 
 .social-icons a {
-  margin: 2px 5px;
   text-decoration: none;
 }
 
 footer p {
-  font-size: 14px;
+  font-size: 0.7rem;
 }
 
 footer i {
   color: white;
-  font-size: 3vh;
-  padding: 10px;
+  font-size: 1vh;
+  padding: 2px 0;
   cursor: pointer;
 }
 
@@ -346,6 +442,8 @@ footer a {
 
 footer i:hover {
   color: darkcyan;
-  transform: scale(1.05);
-  transition: 100ms;
+  transform: scale(1.1);
+  transition: 200ms;
 }
+
+/* Tambahan */
