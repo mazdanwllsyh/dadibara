@@ -1,24 +1,58 @@
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Averia+Sans+Libre&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Averia+Sans+Libre&display=swap");
+/* ONLINE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Madimi+One&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
+/* LOCAL FONTS */
+@font-face {
+  font-family: "SF UI Text";
+  src: url("fonts/SFUIText-Regular.woff2") format("woff2"),
+    url("fonts/SFUIText-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF UI Display";
+  src: url("fonts/SFUIDisplay-Medium.woff2") format("woff2"),
+    url("fonts/SFUIDisplay-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF UI Display";
+  src: url("fonts/SFUIDisplay-Bold.woff2") format("woff2"),
+    url("fonts/SFUIDisplay-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* BODY */
 body {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
 
-section {
-  min-height: 100vh;
+.section-title {
+  font-family: "SF UI Display", sans-serif;
+  font-weight: bold;
+  font-size: 225%;
+  text-align: center;
 }
 
-.section-title {
-  font-family: "Inter Tight", sans-serif;
-  font-weight: bold;
-  font-size: 36px;
-  text-align: center;
+.section-subtitle {
+  font-family: "SF UI Text", sans-serif;
+  font-size: 105%; /* Memperbesar ukuran font */
+  color: #666; /* Warna teks */
+  cursor: pointer;
+}
+
+.text-custom {
+  font-family: "Manrope", sans-serif;
+  text-transform: uppercase;
 }
 
 /* Custom CSS for Navbar */
@@ -33,14 +67,14 @@ section {
 }
 
 .navbar-nav .nav-link {
-  font-size: 16px; /* Mengubah ukuran font */
+  font-size: 15px; /* Mengubah ukuran font */
   font-family: "Averia Sans Libre", sans-serif; /* Mengubah jenis font */
   transition: all 0.45s; /* Efek transisi untuk hover */
   min-width: 130px;
   border-radius: 9px;
   text-align: center;
   padding: 5px 9px;
-  margin: 8px 2vh;
+  margin: 5px 1vh;
   color: #323232;
   background-color: rgb(202, 202, 202);
 }
@@ -59,8 +93,7 @@ section {
 }
 
 .dropdown-menu {
-  backdrop-filter: blur (2px);
-  background-color: rgba(170, 125, 125, 0.482);
+  background-color: rgb(196, 176, 176);
   z-index: 999;
 }
 
@@ -102,7 +135,7 @@ section {
 }
 
 .explore-btn {
-  font-family: "Inter Tight", sans-serif;
+  font-family: "SF UI Text", sans-serif;
   margin-top: 20px;
   width: 150px;
   padding: 10px;
@@ -123,6 +156,10 @@ section {
 }
 
 /* Tentang Kami */
+#about {
+  min-height: 100vh;
+}
+
 .about__setion-thumbnail {
   height: 240px;
   object-fit: cover;
@@ -153,6 +190,7 @@ section {
 }
 
 .text-about-us {
+  font-family: "SF UI Text", sans-serif;
   text-align: justify;
 }
 
@@ -160,37 +198,17 @@ section {
 .carousel-control-prev-icon {
   padding: 18px 12px;
   background-color: #231e1e96;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9px;
 }
 
 .carousel-item {
   min-width: 100%;
-  height: 450px;
+  height: 455px;
 }
 
 /* PENGURUS */
-.input-group {
-  position: relative;
-}
-
-.input-group .form-control {
-  padding-right: 2.5rem;
-}
-
-.input-group .input-group-text {
-  position: absolute;
-  right: 0.75rem;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 0;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-}
-
-.input-group .input-group-text .fas {
-  color: #888;
-}
-
 #collab-bg-img {
   background-image: url();
   background-repeat: no-repeat;
@@ -201,16 +219,16 @@ section {
 
 #collab-bg-img h2 {
   color: #323232;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.35);
 }
 
 #collab-bg-img p {
-  color: #bc9e9e;
+  color: #d4b4b4;
 }
 
 .intro {
   font-size: 16px;
-  max-width: 500px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -228,7 +246,7 @@ section {
 }
 
 .item .box {
-  border-radius: 12px;
+  border-radius: 7px;
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -237,20 +255,21 @@ section {
   position: relative;
   overflow: hidden;
   margin: 0 auto;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.95);
 }
 
 .item .box:hover {
   transition: 150ms ease;
-  border: 2px solid darkkhaki;
+  border: 3px solid rgba(109, 119, 119, 0.705);
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.9);
 }
 
 .item .box-1 {
-  min-height: 450px;
+  height: 425px;
 }
 
 .item .box-2 {
-  min-height: 300px;
+  height: 335px;
 }
 
 .item .cover {
@@ -259,13 +278,13 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(65, 65, 65, 0.705);
+  background-color: rgba(68, 68, 68, 0.75);
   transition: 250ms opacity 0.15s ease-in;
   opacity: 0;
   padding-top: 80px;
   color: #fff;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
-  font-family: "Inter Tight", sans-serif;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.55);
+  font-family: "SF UI Display", sans-serif;
 }
 
 .item:hover .cover {
@@ -273,66 +292,156 @@ section {
 }
 
 .item .name {
+  text-transform: capitalize;
+  font-size: 155%;
   font-weight: bold;
   margin-bottom: 8px;
 }
 
 .item .title {
   text-transform: uppercase;
+  font-family: "Manrope", sans-serif;
   font-weight: bold;
-  color: #bbd8fb;
   letter-spacing: 2px;
-  font-size: 13px;
-  margin-bottom: 20px;
+  font-size: 0.85rem;
+  margin-bottom: 25px;
 }
 
-.social {
-  font-size: 22px;
+.item .box-1 .social {
+  font-size: 2rem;
+}
+
+.item .box-2 .social {
+  font-size: 175%;
 }
 
 .social a {
   color: inherit;
-  margin: 0 10px;
+  margin: 30px 12px;
   display: inline-block;
-  opacity: 0.7;
+  opacity: 0.75;
 }
 
 .social a:hover {
   opacity: 1;
-  transform: scale(1.15);
-  transition: 0.4s ease;
+  transform: translateY(-6px);
+  transition: 0.3s ease-in-out;
   color: goldenrod;
 }
 
-@media (max-width: 762px) {
-  .item .box {
-    height: 400px !important;
+/* SK DADI BARA */
+#sk-dadibara {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#sk-dadibara.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#sk-dadibara iframe {
+  width: 100%;
+  max-width: 800px; /* Sesuaikan dengan kebutuhan Anda */
+  height: 100vh; /* Tinggi diatur agar memenuhi seluruh tinggi viewport */
+  border: 1px solid black;
+}
+
+/* Tambahkan media query untuk mode tablet/pad */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #sk-dadibara iframe {
+    height: 75vh; /* Sesuaikan tinggi untuk tablet/pad */
   }
 }
 
 /* FAQ */
 #faq {
-  background-image: url();
-  background-repeat: no-repeat;
-  width: 100%;
-  min-height: 90vh;
-  background-size: cover;
+  min-height: 100vh;
 }
 
-#faq h2 {
-  color: #323232;
-  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
-  letter-spacing: 1px;
-  font-weight: 700;
+.faq {
+  background-color: #f8f9fa; /* Ganti dengan warna latar belakang yang diinginkan */
+  min-height: 100vh; /* Menetapkan tinggi minimum 100vh untuk menyamakan dengan seluruh section */
+  padding: 50px 0; /* Memberikan padding atas dan bawah */
 }
 
-#faq button {
-  background-color: rgba(0, 0, 0, 0.2);
+.faq .section-title {
+  font-family: "SF UI Display", sans-serif;
+  font-weight: bolder;
+  font-size: 2rem; /* Memperbesar ukuran font */
+  color: #333; /* Warna teks */
 }
 
-.accordion-body p {
+.faq .section-subtitle {
+  font-family: "SF UI Text", sans-serif;
+  font-size: 1rem; /* Memperbesar ukuran font */
+  color: #666; /* Warna teks */
+  margin-bottom: 30px; /* Memberikan margin bawah */
+}
+
+.faq .text-center {
+  color: #555;
+  line-height: 1.6;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #ffffff !important; /* Warna teks saat accordion terbuka */
+  background-color: rgba(
+    0,
+    139,
+    139,
+    0.856
+  ) !important; /* Warna background saat accordion terbuka */
+  transition: background-color 0.3s ease; /* Transisi untuk perubahan warna background */
+}
+
+.accordion-button {
+  font-family: "SF UI Display", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  color: #262626; /* Warna teks default */
+  background-color: rgba(199, 199, 199, 0.65) !important;
+  transition: background-color 0.3s ease; /* Transisi untuk perubahan warna background */
+}
+
+.accordion-button:hover {
+  background-color: rgb(149, 163, 182) !important;
+  color: #2c2c2c !important;
+}
+
+.accordion-body {
+  font-family: "SF UI Text", sans-serif;
+  font-size: 1.1rem;
+  color: #555;
   text-align: justify;
-  font-size: 14px;
+  line-height: 1.6;
+  padding: 20px 40px; /* Memberikan padding lebih pada accordion body */
+  background-color: #ffffff; /* Warna background pada accordion body */
+}
+
+.accordion-item {
+  border: none; /* Menghapus border default */
+  border-radius: 10px; /* Membuat border radius */
+  overflow: hidden; /* Menyembunyikan overflow */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Menambahkan shadow */
+  margin-bottom: 12px; /* Memberikan margin bawah pada setiap item */
+}
+
+.accordion-header {
+  padding: 0; /* Menghapus padding default */
+}
+
+.accordion-button:focus {
+  box-shadow: none; /* Menghapus shadow saat fokus */
+}
+
+.accordion-button:hover {
+  background-color: #dcdcdc; /* Warna background saat hover */
 }
 
 /* Mengubah warna latar belakang dan teks dari accordion pertama */
@@ -383,17 +492,15 @@ section {
 }
 
 .alert-success {
-  background-color: #d4edda;
-  color: #1e582b;
-  border: 1px solid #c3e6cb;
-  margin-bottom: 10px;
+  background-color: #a2eebc;
+  color: #123b1b;
+  border: 1px solid #757875;
 }
 
 .alert-danger {
-  background-color: #f8d7da;
+  background-color: #d0a1a5;
   color: #e7081f;
-  border: 1px solid #f5c6cb;
-  margin-bottom: 15px;
+  border: 1px solid #ff0019;
 }
 
 iframe {
@@ -425,13 +532,15 @@ footer {
 }
 
 footer p {
-  font-size: 0.7rem;
+  font-size: 70%;
 }
 
 footer i {
   color: white;
+  background-color: #556357;
+  border-radius: 6px;
   font-size: 1vh;
-  padding: 2px 0;
+  padding: 6px 7px;
   cursor: pointer;
 }
 
@@ -441,9 +550,11 @@ footer a {
 }
 
 footer i:hover {
-  color: darkcyan;
-  transform: scale(1.1);
-  transition: 200ms;
+  font-size: medium;
+  color: black;
+  background-color: white;
+  transform: translateY(-4.5px);
+  transition: 150ms;
 }
 
 /* Tambahan */

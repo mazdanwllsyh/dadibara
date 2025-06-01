@@ -3,7 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SK - KARTAR DADIBARA</title>
+    <meta
+      name="description"
+      content="SK Karang Taruna DADI BARA - Organisasi bersama dalam mengembangkan kesejahteraan sosial di Bejalen, Ambarawa."
+    />
+    <meta
+      name="keywords"
+      content="Karang Taruna, SK DADI BARA, Bejalen, Ambarawa, organisasi sosial, Karang Taruna DADI BARA, Surat Keputusan"
+    />
+    <meta name="author" content="Desa Bejalen Ambarawa" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="KARTAR DADI BARA - Bejalen" />
+    <meta
+      property="og:description"
+      content="SK Karang Taruna Desa Bejalen Ambarawa."
+    />
+    <meta
+      property="og:image"
+      content="https://github.com/mazdanwllsyh/dadibara/blob/main/assets/Logo.png?raw=true"
+    />
+    <meta property="og:url" content="https://dadibara.bejalen.com/sk.html" />
+    <title>SK - KARTAR DADI BARA</title>
     <link
       rel="shortcut icon"
       href="https://github.com/mazdanwllsyh/dadibara/blob/main/assets/Logo.png?raw=true"
@@ -25,23 +45,39 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <style>
+      @media (max-width: 991.98px) {
+        #navbarLogo {
+          display: none;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- HEADER -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
-        <!-- Logo -->
-        <a class="navbar-brand" href="https://www.bejalen.com/">
+        <!-- Logo DADI BARA -->
+        <a class="navbar-brand order-lg-1">
           <img
             src="https://github.com/mazdanwllsyh/dadibara/blob/main/assets/Logo.png?raw=true"
-            alt="Logo"
-            style="max-width: 75px"
+            alt="Logo DADI BARA"
+            width="65"
+          />
+        </a>
+
+        <!-- Logo Desa Baru -->
+        <a id="navbarLogo" href="https://www.bejalen.com/" class="order-lg-4">
+          <img
+            src="https://github.com/mazdanwllsyh/dadibara/blob/main/assets/logo%20desa%20baru.png?raw=true"
+            alt="Logo Desa Baru"
+            width="65"
           />
         </a>
 
         <!-- Navbar Toggler (Hamburger) -->
         <button
-          class="navbar-toggler"
+          class="navbar-toggler order-lg-3"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -53,18 +89,18 @@
         </button>
 
         <!-- Navbar Items -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <!-- Menggunakan ms-auto untuk memindahkan ke kanan -->
-            <!-- Section 1 -->
+        <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html#hero">Beranda</a>
+              <a class="nav-link" href="index.html#hero">
+                <i class="fas fa-home me-2"></i>Beranda
+              </a>
             </li>
-            <!-- Section 2 -->
             <li class="nav-item">
-              <a class="nav-link" href="index.html#about">Tentang Kami</a>
+              <a class="nav-link" href="index.html#about">
+                <i class="fas fa-info-circle me-2"></i>Tentang Kami
+              </a>
             </li>
-            <!-- Section 3 (Dropdown) -->
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -73,22 +109,28 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Keanggotaan
+                <i class="fas fa-users me-2"></i>Keanggotaan
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a class="dropdown-item" href="pengurus.html">Pengurus</a>
+                  <a class="dropdown-item" href="pengurus.html">
+                    Pengurus DADI BARA
+                  </a>
                 </li>
-                <li><a class="dropdown-item" href="sk.html">SK DADIBARA</a></li>
+                <li>
+                  <a class="dropdown-item" href="sk.html">SK DADI BARA</a>
+                </li>
               </ul>
             </li>
-            <!-- Section 4 -->
             <li class="nav-item">
-              <a class="nav-link" href="index.html#faq">FAQ</a>
+              <a class="nav-link" href="index.html#faq">
+                <i class="fas fa-question-circle me-2"></i>FAQ
+              </a>
             </li>
-            <!-- Section 5 -->
             <li class="nav-item">
-              <a class="nav-link" href="index.html#contact-us">Kontak Kami</a>
+              <a class="nav-link" href="index.html#contact-us">
+                <i class="fas fa-envelope me-2"></i>Kontak Kami
+              </a>
             </li>
           </ul>
         </div>
@@ -98,12 +140,15 @@
     <!-- PDF Viewer -->
     <section id="sk-dadibara">
       <div class="container my-5">
-        <h2 class="section-title text-center mb-5">SK - Pengurus DADI BARA</h2>
+        <h2 class="section-title text-center mb-3">SK - Pengurus DADI BARA</h2>
+        <p class="section-subtitle text-center mb-3 opacity-75">
+          "Surat Keputusan Karang Taruna DADI BARA"
+        </p>
         <div class="container d-flex justify-content-center">
           <iframe
-            src="https://drive.google.com/file/d/1MVTgmGmJGdHHqSRJ4ZRKxnlAYyS62Js3/preview"
+            src="https://drive.google.com/file/d/1qkDP39-bk7rzzp143UAu-5hqywYeQwEW/preview"
             width="80%"
-            height="650px"
+            height="600px"
             style="border: 1px solid black"
           ></iframe>
         </div>
@@ -114,23 +159,23 @@
     <footer id="footer-bg-img" class="bg-dark text-light py-4">
       <div class="container">
         <div class="row justify-content-center align-items-center mb-3">
-          <div class="col-auto">
+          <div class="col-auto mt-0">
             <a
               href="https://www.instagram.com/kartar.dadibara/"
               target="_blank"
               class="text-decoration-none text-light"
             >
-              <i class="fab fa-instagram fa-2x"></i>
-            </a>
+              <i class="fab fa-instagram fa-1x"></i
+            ></a>
           </div>
-          <div class="col-auto">
+          <div class="col-auto mt-0">
             <a
-              href="https://https://wa.me/62/83108788527"
+              href="https://wa.me/6283108788527"
               target="_blank"
               class="text-decoration-none text-light"
             >
-              <i class="fab fa-whatsapp fa-2x"></i>
-            </a>
+              <i class="fab fa-whatsapp fa-1x"></i
+            ></a>
           </div>
         </div>
         <div class="row">
@@ -140,14 +185,12 @@
               <a
                 href="https://maps.app.goo.gl/AQ2GP9iUVEaS7Eyj6"
                 target="_blank"
-              >
-                <i class="fas fa-location-dot" style="font-size: 14px"></i>
-                Desa Bejalen, Kec. Ambarawa, Kab. Semarang 50614</a
-              >
+                >Desa Bejalen, Kec. Ambarawa, Kab. Semarang 50614
+              </a>
             </p>
             <hr class="my-3" />
-            <!-- Pemisah (hr) di bawah ikon sosial media -->
-            <p class="mb-0">&copy; 2024 DADI BARA</p>
+            <!-- Pemisah (hr) -->
+            <p class="mb-0">&copy; 2024 DADI BARA - Bejalen Ambarawa</p>
           </div>
         </div>
       </div>

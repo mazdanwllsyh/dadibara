@@ -2,8 +2,31 @@
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KARTAR DADIBARA - Bejalen</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=0.7, minimum-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="Karang Taruna DADI BARA - Organisasi bersama dalam mengembangkan kesejahteraan sosial di Bejalen, Ambarawa."
+    />
+    <meta
+      property="og:image"
+      content="https://github.com/mazdanwllsyh/dadibara/blob/main/assets/Logo.png?raw=true"
+    />
+    <meta
+      name="keywords"
+      content="DADI BARA, Karang Taruna DADI BARA, Bejalen, Ambarawa, organisasi sosial, Karang Taruna, Pemuda Pemudi Bejalen"
+    />
+    <meta name="author" content="KARTAR DADI BARA Developer" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="KARTAR DADI BARA - Bejalen" />
+    <meta
+      property="og:description"
+      content="Karang Taruna DADI BARA - Organisasi bersama dalam mengembangkan kesejahteraan sosial di Bejalen, Ambarawa."
+    />
+    <meta property="og:url" content="https://dadibara.bejalen.com" />
+    <title>KARTAR DADI BARA - Bejalen</title>
     <link
       rel="shortcut icon"
       href="https://github.com/mazdanwllsyh/dadibara/blob/main/assets/Logo.png?raw=true"
@@ -25,23 +48,39 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <style>
+      @media (max-width: 991.98px) {
+        #navbarLogo {
+          display: none;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- HEADER -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
-        <!-- Logo -->
-        <a class="navbar-brand" href="https://www.bejalen.com/">
+        <!-- Logo DADI BARA -->
+        <a class="navbar-brand order-lg-1">
           <img
             src="https://github.com/mazdanwllsyh/dadibara/blob/main/assets/Logo.png?raw=true"
-            alt="Logo"
-            style="width: 75px"
+            alt="Logo DADI BARA"
+            width="65"
+          />
+        </a>
+
+        <!-- Logo Desa Baru -->
+        <a id="navbarLogo" href="https://www.bejalen.com/" class="order-lg-4">
+          <img
+            src="https://github.com/mazdanwllsyh/dadibara/blob/main/assets/logo%20desa%20baru.png?raw=true"
+            alt="Logo Desa Baru"
+            width="65"
           />
         </a>
 
         <!-- Navbar Toggler (Hamburger) -->
         <button
-          class="navbar-toggler"
+          class="navbar-toggler order-lg-3"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -53,18 +92,18 @@
         </button>
 
         <!-- Navbar Items -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <!-- Menggunakan ms-auto untuk memindahkan ke kanan -->
-            <!-- Section 1 -->
+        <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#hero">Beranda</a>
+              <a class="nav-link" href="#hero">
+                <i class="fas fa-home me-2"></i>Beranda
+              </a>
             </li>
-            <!-- Section 2 -->
             <li class="nav-item">
-              <a class="nav-link" href="#about">Tentang Kami</a>
+              <a class="nav-link" href="#about">
+                <i class="fas fa-info-circle me-2"></i>Tentang Kami
+              </a>
             </li>
-            <!-- Section 3 (Dropdown) -->
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -73,22 +112,28 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Keanggotaan
+                <i class="fas fa-users me-2"></i>Keanggotaan
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a class="dropdown-item" href="pengurus.html">Pengurus</a>
+                  <a class="dropdown-item" href="pengurus.html">
+                    Pengurus DADI BARA
+                  </a>
                 </li>
-                <li><a class="dropdown-item" href="sk.html">SK Kartar</a></li>
+                <li>
+                  <a class="dropdown-item" href="sk.html">SK DADI BARA</a>
+                </li>
               </ul>
             </li>
-            <!-- Section 4 -->
             <li class="nav-item">
-              <a class="nav-link" href="#faq">FAQ</a>
+              <a class="nav-link" href="#faq">
+                <i class="fas fa-question-circle me-2"></i>FAQ
+              </a>
             </li>
-            <!-- Section 5 -->
             <li class="nav-item">
-              <a class="nav-link" href="#contact-us">Kontak Kami</a>
+              <a class="nav-link" href="#contact-us">
+                <i class="fas fa-envelope me-2"></i>Kontak Kami
+              </a>
             </li>
           </ul>
         </div>
@@ -104,20 +149,20 @@
               src="https://github.com/mazdanwllsyh/dadibara/blob/main/assets/Logo.png?raw=true"
               alt="Logo"
               class="img-fluid pb-4"
-              width="55%"
-              height="55%"
+              width="60%"
+              height="60%"
             />
           </div>
           <div class="col-lg-6 order-lg-1 align-items-center text-center">
             <h1
-              class="display-5 fw-bold lh-1 mb-3"
+              class="section-title display-5 fw-bold lh-1 mb-3"
               data-aos="fade-down"
-              data-aos-delay="100"
-              style="font-family: 'Inter Tight', sans-serif"
+              data-aos-delay="1750"
+              style="font-size: 2.3rem"
             >
-              KARANG TARUNA<br>DADI BARA
+              KARANG TARUNA<br />DADI BARA
             </h1>
-            <h3>Selamat Datang<br/>Di Website DADI BARA</h3>
+            <h4 class="m-4">Selamat Datang<br />Di Website DADI BARA</h4>
             <a class="btn explore-btn" href="#about">Jelajahi</a>
           </div>
         </div>
@@ -127,35 +172,33 @@
     <!-- About Us -->
     <section id="about" class="aboutus container-custom about-us-bg-img py-5">
       <div class="container">
+        <h2 class="section-title mt-5 mb-4 text-center">Tentang Kami</h2>
         <div class="row">
-          <div class="col-12 col-md-8 offset-md-2 align-self-center">
-            <h2 class="section-title h2 mb-4 mt-5 ms-auto text-center">
-              Tentang Kami
-            </h2>
+          <div class="col-12 col-md-6 order-md-2 align-self-center">
             <p class="text-about-us mb-4">
-              Karang Taruna adalah organisasi sosial kemasyarakatan sebagai
-              wadah dan sarana pengembangan setiap anggota masyarakat yang
-              tumbuh dan berkembang atas dasar kesadaran dan tanggung jawab
-              sosial dari, oleh dan untuk masyarakat terutama generasi muda di
-              wilayah desa/kelurahan terutama bergerak dibidang usaha
-              kesejahteraan sosial.
+              Karang Taruna adalah organisasi sosial kemasyarakatan yang
+              berfungsi sebagai wadah pengembangan potensi setiap anggota
+              masyarakat, khususnya generasi muda, di bidang kesejahteraan
+              sosial.
+            </p>
+            <p class="text-about-us mb-4">
+              Karang Taruna DADI BARA berfokus pada peningkatan kesejahteraan
+              sosial di Desa Bejalen. Melalui berbagai kegiatan, kami memberikan
+              ruang bagi pemuda untuk mengekspresikan diri, mengasah
+              keterampilan, dan memberikan kontribusi positif bagi masyarakat.
             </p>
           </div>
-        </div>
-        <div class="row row-cols-1 align-items-center">
-          <div class="col">
-            <div id="carouselExample" class="carousel slide w-75 mx-auto">
+          <div class="col-12 col-md-6 order-md-1">
+            <div
+              id="carouselExample"
+              class="carousel slide"
+              data-bs-ride="carousel"
+              data-bs-interval="2500"
+            >
               <div class="carousel-inner">
                 <div class="carousel-item">
                   <img
                     src="https://github.com/mazdanwllsyh/dadibara/blob/main/assets/Panitia/Panitia23.jpeg?raw=true"
-                    class="d-block mx-auto w-100 h-100 object-fit-cover"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="https://github.com/mazdanwllsyh/dadibara/blob/main/assets/Panitia/firstday17%2023.jpeg?raw=true"
                     class="d-block mx-auto w-100 h-100 object-fit-cover"
                     alt="..."
                   />
@@ -207,130 +250,161 @@
 
     <!-- FAQ -->
     <section id="faq" class="d-flex align-items-center py-5">
-      <div class="accordion w-75 mx-auto" id="accordionExample">
-        <h2 class="section-title my-5 text-center mb-3">
-          Frequently Asked Questions
-        </h2>
-        <p class="my-5 text-center mt-0 small">
-          Pertanyaan yang sering ditanyakan
-        </p>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseOne"
-              aria-expanded="true"
-              aria-controls="collapseOne"
-            >
-              <p>Kapan Dibentuknya KARTAR DADI BARA?</p>
-            </button>
-          </h2>
-          <div
-            id="collapseOne"
-            class="accordion-collapse collapse show"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <p>
-                KARTAR DADIBARA atau Karang Taruna Pemuda Pemudi Bejalen
-                Ambarawa telah di <strong>re-organisasi </strong>pada tanggal
-                <strong>22 Desember 2023</strong>.<br />
-                Yang dihadiri langsung Oleh Kepala Desa Bejalen pada saat itu
-                Bp. Nowo Sugiharto dan beberapa perangkat desa lainnya.
-              </p>
-            </div>
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col">
+            <h2 class="section-title text-center mt-5">
+              Frequently Asked Questions
+            </h2>
+            <p class="section-subtitle text-center mb-3 opacity-50">
+              "Pertanyaan yang Sering Ditanyakan"
+            </p>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo"
-              aria-expanded="false"
-              aria-controls="collapseTwo"
-            >
-              <p>Apa arti dari DADI BARA?</p>
-            </button>
-          </h2>
-          <div
-            id="collapseTwo"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <p>
-                DADI BARA sendiri merupakan singkatan dari
-                <strong>Pemuda Pemudi Bejalen Ambarawa</strong>.<br />
-                yang mana kata kata tersebut merupakan Ide Abstrak yang
-                dikemukakan dan disetujui oleh semua Anggota dan Ketua dari
-                Karang Taruna DADI BARA.
-              </p>
-              <p>
-                Bisa diartikan juga menjadikan
-                <strong>Semangat Membara</strong> Bagi Desa Bejalen Ambarawa.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseThree"
-              aria-expanded="false"
-              aria-controls="collapseThree"
-            >
-              <p>Berapa Jumlah anggota Aktif DADI BARA?</p>
-            </button>
-          </h2>
-          <div
-            id="collapseThree"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <p>
-                Karang Taruna DADI BARA memiliki Kurang Lebih 30 Orang<br />
-                Yang terdiri dari 2 Ketua, 1 Sekretaris dan 1 Bendahara, beserta
-                10 Seksi yang merupakan orang-orang yang telah terpilih di
-                Bidangnya.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseFour"
-              aria-expanded="false"
-              aria-controls="collapseFour"
-            >
-              <p>Berapa lama masa jabatan DADI BARA?</p>
-            </button>
-          </h2>
-          <div
-            id="collapseFour"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <p>
-                Pengurus Lembaga Kemasyarakatan Karang Taruna DADI BARA memegang
-                jabatan selama 3 (tiga) Tahun terhitung sejak tanggal
-                ditetapkan.
-              </p>
-              <p style="font-style: italic; font-weight: bold">
-                Sumber: SK DADIBARA
-              </p>
+        <div class="row row-cols-1 g-4">
+          <div class="col">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    <p>
+                      <i class="fas fa-question-circle me-2"></i>Kapan
+                      Dibentuknya KARTAR DADI BARA?
+                    </p>
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      KARTAR DADI BARA atau Karang Taruna Pemuda Pemudi Bejalen
+                      Ambarawa telah di <strong>re-organisasi </strong>pada
+                      tanggal <strong>22 Desember 2023</strong>.<br />
+                      Acara ini dihadiri langsung oleh Kepala Desa Bejalen pada
+                      saat itu Bp. Nowo Sugiharto dan beberapa perangkat desa
+                      lainnya, menandai tonggak penting dalam sejarah komunitas
+                      ini.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    <p>
+                      <i class="fas fa-question-circle me-2"></i>Apa arti dari
+                      DADI BARA?
+                    </p>
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      DADI BARA sendiri merupakan singkatan dari
+                      <strong>Pemuda Pemudi Bejalen Ambarawa</strong>.<br />
+                      Nama ini diusulkan dan disetujui oleh semua anggota dan
+                      ketua Karang Taruna DADI BARA. Selain itu, nama ini juga
+                      mencerminkan semangat
+                      <strong>Semangat Membara</strong> bagi Desa Bejalen
+                      Ambarawa, memotivasi pemuda-pemudi untuk berkontribusi
+                      aktif dalam kemajuan desa.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    <p>
+                      <i class="fas fa-question-circle me-2"></i>Berapa Jumlah
+                      anggota Aktif DADI BARA?
+                    </p>
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Karang Taruna DADI BARA memiliki sekitar 30 anggota aktif.
+                    </p>
+                    <p>
+                      Terdiri dari 1 ketua, 1 sekretaris, 1 bendahara, serta 12
+                      seksi yang dipimpin oleh orang-orang yang telah terpilih
+                      di bidangnya masing-masing. Anggota ini bekerja sama untuk
+                      menggerakkan berbagai program sosial dan kegiatan positif
+                      di desa.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    <p>
+                      <i class="fas fa-question-circle me-2"></i>Berapa lama
+                      masa jabatan DADI BARA?
+                    </p>
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Pengurus Lembaga Kemasyarakatan Karang Taruna DADI BARA
+                      memegang jabatan selama
+                      <strong>3 (tiga) tahun</strong> terhitung sejak tanggal
+                      ditetapkan.<br />
+                      Masa jabatan ini memastikan adanya regenerasi dan inovasi
+                      dalam kepemimpinan untuk mendukung berkelanjutan program
+                      dan kegiatan yang bermanfaat bagi masyarakat.
+                    </p>
+                    <p style="font-style: italic" class="fw-bold">
+                      Sumber : SK DADI BARA
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -339,7 +413,7 @@
 
     <!-- CONTACT US -->
     <section id="contact-us" class="py-5 d-flex align-items-center">
-      <div class="container mb-5">
+      <div class="container">
         <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
           <div class="col">
             <h2 class="section-title mt-5">Hubungi Kami</h2>
@@ -347,7 +421,7 @@
             <script>
               // Inisialisasi EmailJS dengan Public Key
               (function () {
-                emailjs.init("IuTBxF9ani1Xe4ugm");
+                emailjs.init("Ku_TJesVG59mypDDP");
               })();
 
               function kirimPesan() {
@@ -356,7 +430,7 @@
                 var pesan = document.getElementById("inputMessage").value;
 
                 if (nama === "" || email === "" || pesan === "") {
-                  showAlert("Mohon lengkapi semua kolom!", "danger", false);
+                  showAlert("Mohon lengkapi semua kolom!", "secondary", false);
                   return;
                 }
 
@@ -422,7 +496,6 @@
                   class="form-control"
                   id="email"
                   placeholder="Masukkan Email Anda"
-                  style="font-family: JetBrains Mono, monospace"
                   required
                   minlength="14"
                 />
@@ -432,27 +505,29 @@
                   class="form-control"
                   id="inputMessage"
                   rows="8"
-                  placeholder="Kritik dan Saran"
+                  placeholder="Pesan atau Kritik dan Saran"
                   required
-                  minlength="16"
+                  minlength="20"
                 ></textarea>
               </div>
               <button
                 type="submit"
-                class="btn btn-primary w-100 mb-3"
+                class="btn btn-primary w-100"
                 style="
                   background-color: darkcyan;
-                  font-family: Andika, sans-serif;
+                  font-family: SF UI Display, sans-serif;
+                  font-weight: bold;
                   border: 0;
                 "
               >
                 Kirim
               </button>
             </form>
-
             <!-- Alert Card -->
-            <div id="alertCard" class="alert-card mt-3"></div>
+            <div id="alertCard" class="alert-card mt-1"></div>
           </div>
+
+          <!-- IFRAME GMAPS -->
           <div class="col">
             <h2 class="section-title mt-5 mb-1">Lokasi Kami</h2>
             <iframe
@@ -474,7 +549,7 @@
       <div class="container">
         <div class="row justify-content-center align-items-center mb-3">
           <div class="col-12 text-center mb-2">
-            <p class="mb-0 text-light">Contact Us On:</p>
+            <p class="mb-0 text-light">We Are Available On:</p>
           </div>
           <div class="col-auto">
             <a
@@ -487,29 +562,25 @@
           </div>
           <div class="col-auto">
             <a
-              href="https://wa.me/6287731930024"
+              href="https://wa.me/6287833235758?text=saya%20dengan%20%3CNama%20Anda%3E%2C%20mau%20mengadukan%20kepada%20Karang%20Taruna%20DADI%20BARA"
               target="_blank"
               class="text-decoration-none text-light"
             >
               <i class="fab fa-whatsapp fa-1x"></i>
             </a>
           </div>
-          <div class="col-auto">
-            <a
-              href="https://t.me/"
-              target="_blank"
-              class="text-decoration-none text-light"
-            >
-              <i class="fab fa-telegram fa-1x"></i>
+          <!-- <div class="col-auto">
+            <a href="#" target="_blank" class="text-decoration-none text-light">
+              <i class="fab fa-tiktok fa-1x"></i>
             </a>
-          </div>
+          </div> -->
         </div>
         <hr class="my-3" />
         <!-- Pemisah (hr) di bawah ikon sosial media -->
         <div class="row justify-content-center align-items-center">
           <div class="col-auto">
             <p class="mb-0 text-center text-light text-sm-center">
-              &copy; 2024 KARTAR DADIBARA. All Rights Reserved.
+              &copy; 2024 KARTAR DADI BARA. All Rights Reserved.
             </p>
           </div>
         </div>
